@@ -200,7 +200,7 @@ button {
 }
 
 .home-btn:hover {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 .name div {
@@ -533,6 +533,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .homelarge > div {
@@ -634,4 +635,14 @@ button {
     padding-left: calc(5% + 2em);
     padding-right: calc(5% + 2em);
   }
+}
+
+.home-btn.resume {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-btn.resume:hover {
+  transform: translateX(-50%) scale(1.1);
 }

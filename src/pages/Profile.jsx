@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../Context";
 const Profile = () => {
-  const {type} =useGlobalContext()
+  const { type } = useGlobalContext();
   return (
     <section className='profile'>
       <article>
@@ -15,8 +15,13 @@ const Profile = () => {
           you must know, I am a front-end web developer . I work majorly with
           ReactJS and JavaScript. I have worked briefly with Python. Learning
           MongoDB and NodeJS is something I intend to do soon. <br /> I learn. I
-          build. I collaborate. Look, I am the guy you need on your team. Hire
-          me.
+          build. I collaborate. Look, I am the guy you need on your team.{" "}
+          <Link
+            to='/contact'
+            style={{ fontWeight: "bold", textTransform: "uppercase" }}
+          >
+            Hire me.
+          </Link>
         </p>
       </article>
 
@@ -39,8 +44,8 @@ const Profile = () => {
               <br />
               <a
                 style={{ fontWeight: "bold", cursor: "pointer" }}
-                href=''
-                download='RESUME'
+                href="./Onosereme's_Resume.pdf"
+                download
               >
                 GET MY RESUME
               </a>

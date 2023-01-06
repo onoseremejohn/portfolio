@@ -16,6 +16,11 @@ const HomeLarge = () => {
           </Link>
         </article>
       </div>
+      <button className='home-btn resume'>
+        <a href="./Onosereme's_Resume.pdf" download>
+          DOWNLOAD RESUME
+        </a>
+      </button>
     </div>
   );
 };
