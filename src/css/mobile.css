@@ -293,10 +293,10 @@ button {
   background-color: rgb(162, 93, 93);
   color: #eee2e2;
   display: grid;
+  text-align: center;
   place-items: center;
   border-radius: var(--mainBorderRadius);
   transition: var(--mainTransition);
-  /* font-weight: bold; */
 }
 
 .interest-grid-el:hover {
@@ -461,6 +461,12 @@ button {
   align-items: center;
   color: #eee2e2;
   padding: 5%;
+  transition: var(--mainTransition);
+}
+
+.contact-grid-el:hover {
+  background-color: transparent;
+  color: var(--clr-seconddark);
 }
 
 .contact-grid-el :first-child {
