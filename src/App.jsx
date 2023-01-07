@@ -4,16 +4,17 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-// import { lazy, Suspense } from "react";
+import { lazy } from "react";
 import AppLayout from "./AppLayout";
-import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
-import Profile from "./pages/Profile";
-import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import "./css/mobile.css";
 
-// const Home = lazy(() => import("./pages/Home"));
+const Home = lazy(() => Wait(1000).then(() => import("./pages/Home")));
+const Profile = lazy(() => Wait(1000).then(() => import("./pages/Profile")));
+const Portfolio = lazy(() =>
+  Wait(1000).then(() => import("./pages/Portfolio"))
+);
+const Contact = lazy(() => Wait(1000).then(() => import("./pages/Contact")));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,12 @@ function App() {
       <RouterProvider router={router} />
     </>
   );
+}
+
+function Wait(time) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
 }
 
 export default App;

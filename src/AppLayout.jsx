@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import { useGlobalContext } from "./Context";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
+import Loader from "./components/Loader";
 const AppLayout = () => {
   const {
     windowDimensions: { width },
@@ -14,7 +16,9 @@ const AppLayout = () => {
         <>
           <Header />
           <main className='main'>
-            <Outlet />
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
           </main>
           <Sidebar />
         </>
@@ -23,7 +27,9 @@ const AppLayout = () => {
         <>
           <LeftSide />
           <main className='main-largescreen'>
-            <Outlet />
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
           </main>
           <RightSide />
           <Sidebar />
