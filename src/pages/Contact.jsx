@@ -14,6 +14,7 @@ const Contact = () => {
               .pauseFor(2000)
               .deleteChars(7)
               .typeString("dont bite")
+              .pauseFor(800)
               .start()
           }
         />

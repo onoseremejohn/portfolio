@@ -79,7 +79,6 @@ body {
   z-index: 2;
   display: grid;
   grid-template-rows: 10% 1fr auto;
-  gap: 2em;
   text-transform: uppercase;
   font-size: var(--fs-h3);
   transition: var(--mainTransition);
@@ -105,7 +104,7 @@ body {
 
 .nav > div {
   grid-row: 3/4;
-  padding-bottom: 5em;
+  padding-bottom: 7vh;
   display: flex;
   justify-content: space-around;
 }

@@ -1,8 +1,6 @@
 import { useGlobalContext } from "../../Context";
 import { Link } from "react-router-dom";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import onos from "../../assets/my_pic.jpg";
 import "../../css/mobile.css";
 const HomeMobile = () => {

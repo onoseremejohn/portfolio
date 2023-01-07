@@ -32,6 +32,7 @@ const AppProvider = ({ children }) => {
             .pauseFor(2000)
             .deleteChars(7)
             .typeString("love to code")
+            .pauseFor(800)
             .start()
         }
       />
