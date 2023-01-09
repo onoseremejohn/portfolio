@@ -59,6 +59,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--clr-secondlight);
+  box-shadow: var(--bs);
 }
 header a {
   height: 100%;
@@ -212,6 +213,7 @@ button {
   font-size: var(--fs-h3);
   background: transparent;
   border: none;
+  color: var(--clr-seconddark);
 }
 
 @keyframes spin {
@@ -272,7 +274,7 @@ button {
   border-radius: var(--mainBorderRadius);
   background: red;
   font-weight: bold;
-  box-shadow: 7px 10px 12px -5px rgb(0 0 0 / 56%);
+  box-shadow: var(--lightShadow);
 }
 
 .h3 {
