@@ -4,11 +4,13 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import onos from "../../assets/my_pic.jpg";
 import "../../css/mobile.css";
 const HomeMobile = () => {
-  const { type } = useGlobalContext();
+  const { Type } = useGlobalContext();
   return (
     <section className='home'>
       <div>
-        <h3 className='typewriter'>{type()}</h3>
+        <h3 className='typewriter'>
+          <Type />
+        </h3>
         <div className='clippath'>
           <img src={onos} alt='ONOSEREME' />
         </div>

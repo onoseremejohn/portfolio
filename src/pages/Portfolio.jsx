@@ -4,10 +4,12 @@ import notification from "../assets/notificatio.png";
 import portf from "../assets/portf.png";
 import { useGlobalContext } from "../Context";
 const Portfolio = () => {
-  const { type } = useGlobalContext();
+  const { Type } = useGlobalContext();
   return (
     <section className='portfolio'>
-      <h3 className='profile-typewriter'>Two things: {type()}</h3>
+      <h3 className='profile-typewriter'>
+        Two things: <Type />
+      </h3>
       <h2>My Projects</h2>
       <h3 className='h3'>A couple projects I have worked on</h3>
       <div className='portfolio-grid'>

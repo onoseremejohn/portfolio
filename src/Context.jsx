@@ -22,7 +22,7 @@ const AppProvider = ({ children }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const type = () => {
+  const Type = () => {
     return (
       <Typewriter
         options={{ loop: true }}
@@ -45,7 +45,7 @@ const AppProvider = ({ children }) => {
         toggleNav,
         closeNav,
         windowDimensions,
-        type,
+        Type,
       }}
     >
       {children}

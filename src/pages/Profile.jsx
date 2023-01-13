@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../Context";
 const Profile = () => {
-  const { type } = useGlobalContext();
+  const { Type } = useGlobalContext();
   return (
     <section className='profile'>
       <article>
-        <h3 className='profile-typewriter'>Two things: {type()}</h3>
+        <h3 className='profile-typewriter'>
+          Two things: <Type />
+        </h3>
         <h2>About Me</h2>
         <p className='profile-writeup'>
           I am Onosereme. And I love to code. Actually, what I love to do is to
