@@ -366,7 +366,7 @@ button {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(9, minmax(40px, auto));
+  grid-template-rows: repeat(12, minmax(40px, auto));
   gap: 10px;
   object-fit: contain;
 }
@@ -409,7 +409,7 @@ button {
 
 .portfolio-grid-el-one {
   grid-column: 1/-1;
-  grid-row: 1/4;
+  grid-row: 4/7;
 }
 .portfolio-grid-el-two {
   grid-column: 1/-1;
@@ -418,15 +418,19 @@ button {
 
 .portfolio-grid-el-three {
   grid-column: 1/6;
-  grid-row: 4/7;
+  grid-row: 10/13;
 }
 .portfolio-grid-el-four {
   grid-column: 6/11;
-  grid-row: 4/7;
+  grid-row: 10/13;
+}
+.portfolio-grid-el-five {
+  grid-column: 1/-1;
+  grid-row: 1/4;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio-grid-el-two {
+  /* .portfolio-grid-el-two {
     grid-row: 4/7;
   }
   .portfolio-grid-el-three {
@@ -436,7 +440,7 @@ button {
   .portfolio-grid-el-four {
     grid-column: 1/6;
     grid-row: 7/10;
-  }
+  } */
 }
 
 /* Contact */

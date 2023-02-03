@@ -2,6 +2,7 @@ import todo from "../assets/todo.png";
 import ecommerce from "../assets/ecommerce.png";
 import notification from "../assets/notificatio.png";
 import portf from "../assets/portf.png";
+import tradelane from "../assets/tradelane.png";
 import { useGlobalContext } from "../Context";
 const Portfolio = () => {
   const { Type } = useGlobalContext();
@@ -13,6 +14,14 @@ const Portfolio = () => {
       <h2>My Projects</h2>
       <h3 className='h3'>A couple projects I have worked on</h3>
       <div className='portfolio-grid'>
+        <a
+          href='https://tradelane.netlify.app'
+          className='portfolio-grid-el portfolio-grid-el-five'
+          target='_blank'
+        >
+          <img src={tradelane} alt='TRADELANE' />
+          <p>TradeLane</p>
+        </a>
         <a
           href='https://onoseremejohn.github.io/todo-app'
           className='portfolio-grid-el portfolio-grid-el-one'
