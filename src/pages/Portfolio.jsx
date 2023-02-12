@@ -3,6 +3,7 @@ import ecommerce from "../assets/ecommerce.png";
 import notification from "../assets/notificatio.png";
 import portf from "../assets/portf.png";
 import tradelane from "../assets/tradelane.png";
+import essentialgroup from "../assets/essentialgroup.png";
 import { useGlobalContext } from "../Context";
 const Portfolio = () => {
   const { Type } = useGlobalContext();
@@ -21,6 +22,14 @@ const Portfolio = () => {
         >
           <img src={tradelane} alt='TRADELANE' />
           <p>TradeLane</p>
+        </a>
+        <a
+          href='https://essentialgroup.netlify.app'
+          className='portfolio-grid-el portfolio-grid-el-six'
+          target='_blank'
+        >
+          <img src={essentialgroup} alt='ESSENTIAL GROUP' />
+          <p>EssentialGroup</p>
         </a>
         <a
           href='https://onoseremejohn.github.io/todo-app'
