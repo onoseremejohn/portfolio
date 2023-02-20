@@ -81,7 +81,7 @@ body {
   grid-template-rows: 10% 1fr auto;
   text-transform: uppercase;
   font-size: var(--fs-h3);
-  transition: var(--mainTransition);
+  transition: all 0.5s;
   transform: scale(0) rotate(-180deg);
 }
 

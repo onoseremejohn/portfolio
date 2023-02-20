@@ -365,10 +365,9 @@ button {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(15, minmax(40px, auto));
-  gap: 10px;
-  object-fit: contain;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 270px);
+  gap: 1em;
 }
 .portfolio-grid-el {
   display: block;
@@ -376,7 +375,16 @@ button {
   overflow: hidden;
   position: relative;
   transition: var(--mainTransition);
-  border-radius: var(--mainBorderRadius);
+  border-radius: 0.5em;
+}
+
+.portfolio-grid-el.full-width {
+  grid-column: span 2;
+}
+
+.portfolio-grid-el.last {
+  margin: 0 auto;
+  width: 70%;
 }
 
 .portfolio-grid-el p {
@@ -405,32 +413,6 @@ button {
   width: 100%;
   height: 100%;
   transition: var(--mainTransition);
-}
-
-.portfolio-grid-el-one {
-  grid-column: 1/-1;
-  grid-row: 7/10;
-}
-.portfolio-grid-el-two {
-  grid-column: 1/-1;
-  grid-row: 10/13;
-}
-
-.portfolio-grid-el-three {
-  grid-column: 1/6;
-  grid-row: 13/16;
-}
-.portfolio-grid-el-four {
-  grid-column: 6/11;
-  grid-row: 13/16;
-}
-.portfolio-grid-el-five {
-  grid-column: 1/-1;
-  grid-row: 1/4;
-}
-.portfolio-grid-el-six {
-  grid-column: 1/-1;
-  grid-row: 4/7;
 }
 
 @media screen and (min-width: 768px) {
