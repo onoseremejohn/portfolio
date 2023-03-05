@@ -183,6 +183,7 @@ body {
   }
   .left-side img {
     max-width: 100px;
+    margin: 0 auto;
   }
   .left-side > div {
     display: block;

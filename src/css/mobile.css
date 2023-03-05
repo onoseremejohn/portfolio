@@ -468,6 +468,7 @@ button {
   font-size: var(--fs-h3);
   font-weight: bold;
   text-align: center;
+  word-break: break-word;
 }
 
 @media screen and (max-width: 1093px) and (min-width: 800px) {
