@@ -366,7 +366,7 @@ button {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, minmax(80px, auto));
+  grid-template-rows: repeat(auto, minmax(80px, auto));
   gap: 1em;
 }
 .portfolio-grid-el {
@@ -382,10 +382,10 @@ button {
   grid-column: span 2;
 }
 
-.portfolio-grid-el.last {
+/* .portfolio-grid-el.last {
   margin: 0 auto;
   width: 70%;
-}
+} */
 
 .portfolio-grid-el p {
   position: absolute;
