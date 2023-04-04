@@ -248,7 +248,23 @@ button {
   letter-spacing: 2px;
   line-height: 1.8;
 }
-
+ul.experiences li {
+  margin-bottom: 1.2em;
+  position: relative;
+}
+ul.experiences li h3 {
+  position: relative;
+}
+ul.experiences li h3::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -20px;
+  top: 10px;
+  background-color: var(--clr-seconddark);
+}
 .profile-writeup a:hover {
   color: red;
 }
@@ -278,7 +294,7 @@ button {
 }
 
 .h3 {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .interest-grid {

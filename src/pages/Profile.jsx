@@ -29,10 +29,12 @@ const Profile = () => {
       </article>
       <article>
         <h2>Experience</h2>
-        <h3>My dev journey. Condensed</h3>
-        <ul>
+        <h3 style={{ marginBottom: "1em", fontSize: "unset" }}>
+          My dev journey. Condensed
+        </h3>
+        <ul className="experiences">
           <li>
-            <h3 className="h3">(May'22 - Present)</h3>
+            <h3>(May'22 - Present): Self-Learning</h3>
             <p className="profile-writeup">
               Currently investing heavily in online resources such as Udemy.
               Completed quite a number of advanced development courses and built
@@ -51,6 +53,16 @@ const Profile = () => {
               >
                 GET MY RESUME
               </a>
+            </p>
+          </li>
+          <li>
+            <h3>
+              (March'23 - Present): Software Developer Intern @ SiNet
+              Technologies
+            </h3>
+            <p className="profile-writeup">
+              Gaining valuable experience in building web applications and
+              developing software solutions.
             </p>
           </li>
         </ul>
