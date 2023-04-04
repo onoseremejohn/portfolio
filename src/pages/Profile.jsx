@@ -14,7 +14,7 @@ const Profile = () => {
           learn. And to build stuff. Coding just happens to be my most rewarding
           means to these ends. <br /> I’m pursuing a bachelor’s in computer
           engineering and have passion towards software development. <br /> If
-          you must know, I am a web developer . I work majorly with ReactJS and
+          you must know, I am a web developer . I work majorly with React and
           TypeScript. I'm currently leaning NodeJS and ExpressJS. Learning
           MongoDB, PostgreSql, NextJS and React Native is something I intend to
           do soon. <br /> I learn. I build. I collaborate. Look, I am the guy
@@ -27,7 +27,6 @@ const Profile = () => {
           </Link>
         </p>
       </article>
-
       <article>
         <h2>Experience</h2>
         <h3>My dev journey. Condensed</h3>
