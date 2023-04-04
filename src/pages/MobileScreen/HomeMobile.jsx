@@ -16,7 +16,7 @@ const HomeMobile = () => {
         </div>
         <div className='name'>
           <h2>Onosereme Emuemhonjie</h2>
-          <p>Frontend Developer</p>
+          <p>Software Developer</p>
           <Link to='profile'>
             <button className='home-btn'>view my profile</button>
           </Link>

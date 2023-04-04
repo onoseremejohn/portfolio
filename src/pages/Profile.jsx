@@ -14,10 +14,11 @@ const Profile = () => {
           learn. And to build stuff. Coding just happens to be my most rewarding
           means to these ends. <br /> I’m pursuing a bachelor’s in computer
           engineering and have passion towards software development. <br /> If
-          you must know, I am a front-end web developer . I work majorly with
-          ReactJS and JavaScript. I have worked briefly with Python. Learning
-          MongoDB and NodeJS is something I intend to do soon. <br /> I learn. I
-          build. I collaborate. Look, I am the guy you need on your team.{" "}
+          you must know, I am a web developer . I work majorly with ReactJS and
+          TypeScript. I'm currently leaning NodeJS and ExpressJS. Learning
+          MongoDB, PostgreSql, NextJS and React Native is something I intend to
+          do soon. <br /> I learn. I build. I collaborate. Look, I am the guy
+          you need on your team.{" "}
           <Link
             to="/contact"
             style={{ fontWeight: "bold", textTransform: "uppercase" }}
