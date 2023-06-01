@@ -10,15 +10,24 @@ const Profile = () => {
         </h3>
         <h2>About Me</h2>
         <p className="profile-writeup">
-          I am Onosereme. And I love to code. Actually, what I love to do is to
-          learn. And to build stuff. Coding just happens to be my most rewarding
-          means to these ends. <br /> I’m pursuing a bachelor’s in computer
-          engineering and have passion towards software development. <br /> If
-          you must know, I am a web developer . I work majorly with React and
-          TypeScript. I'm currently leaning NodeJS and ExpressJS. Learning
-          MongoDB, PostgreSql, NextJS and React Native is something I intend to
-          do soon. <br /> I learn. I build. I collaborate. Look, I am the guy
-          you need on your team.{" "}
+          Hello, I'm Onosereme, a passionate and dedicated learner with a strong
+          affinity for coding. Building things and constantly expanding my
+          knowledge are my true passions, and software development is the most
+          rewarding avenue for achieving these goals. <br />
+          <br />
+          Currently pursuing a bachelor's degree in computer engineering, I have
+          developed a deep passion for software development. I'm a full-stack
+          developer leveraging the power of MongoDB, Express.js, React, and
+          Node.js. However, my thirst for knowledge doesn't end there. I am
+          currently honing my skills in Node.js and Express.js, and I have plans
+          to delve into the realm of AWS Cloud services in the near future.{" "}
+          <br />
+          <br />
+          Driven by a desire to learn, I am constantly seeking new opportunities
+          to collaborate and grow. Whether it's working on exciting projects or
+          joining a dynamic team. If you're in need of a versatile and skilled
+          developer for your team, look no further. I am the guy you need on
+          your team.{" "}
           <Link
             to="/contact"
             style={{ fontWeight: "bold", textTransform: "uppercase" }}
@@ -34,8 +43,8 @@ const Profile = () => {
         </h3>
         <ul className="experiences">
           <li>
-            <h3>(May'22 - Present): Self-Learning</h3>
-            <p className="profile-writeup">
+            <h3>(May ‘22 - Present): Self-Learning</h3>
+            <div className="profile-writeup">
               Currently investing heavily in online resources such as Udemy.
               Completed quite a number of advanced development courses and built
               amazing projects with my knowledge. Check out my portfolio{" "}
@@ -53,17 +62,54 @@ const Profile = () => {
               >
                 GET MY RESUME
               </a>
-            </p>
+            </div>
           </li>
           <li>
             <h3>
-              (March'23 - Present): Software Developer Intern @ SiNet
-              Technologies
+              (March ‘23 - May ‘23): Software Developer Intern @ SiNet
+              Technologies (Seconded to OANDO PLC)
             </h3>
-            <p className="profile-writeup">
-              Gaining valuable experience in building web applications and
-              developing software solutions.
-            </p>
+            <div className="profile-writeup">
+              <ul>
+                <li>
+                  Developed numerous APIs, gaining hands-on experience in
+                  building robust and efficient server-side endpoints.
+                </li>
+                <li>
+                  Explored and utilized MongoDB in web applications, becoming
+                  proficient in leveraging its powerful features and utilizing
+                  handy MongoDB methods.
+                </li>
+                <li>
+                  Mastered Node.js and Express.js, developing secure and robust
+                  backends for web applications.
+                </li>
+                <li>
+                  Implemented JWT (JSON Web Tokens) in my projects, gaining a
+                  solid understanding of authentication and security mechanisms
+                  in web applications.
+                </li>
+                <li>
+                  Developed and deployed a responsive full-stack web application
+                  using React with TypeScript for the frontend and Node.js,
+                  Express.js, and MongoDB for the backend.
+                </li>
+                <li>
+                  Worked extensively with templating using EJS, enhancing my
+                  knowledge of dynamic content generation and rendering.
+                </li>
+                <li>
+                  Acquainted with cloud services, including both on-premises and
+                  cloud environments, and gained knowledge of deploying and
+                  managing applications in these environments.
+                </li>
+                <li>
+                  Learned about data privacy practices and considerations,
+                  ensuring compliance with data protection regulations and
+                  implementing appropriate security measures.
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </article>
@@ -72,9 +118,12 @@ const Profile = () => {
         <h2>Core Skills</h2>
         <h3 className="h3">Languages and Tech I work with</h3>
         <div>
+          <span>NODE JS</span>
           <span>REACT</span>
           <span>JAVASCRIPT</span>
+          <span>MONGODB</span>
           <span>TYPESCRIPT</span>
+          <span>EXPRESS</span>
           <span>CSS</span>
           <span>TAILWIND</span>
           <span>STYLED-COMPONENTS</span>

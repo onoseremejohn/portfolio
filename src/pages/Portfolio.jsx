@@ -1,3 +1,4 @@
+import { FaGithub, FaSearch } from "react-icons/fa";
 import countries from "../assets/countries.png";
 import form from "../assets/multistep-form.png";
 import todo from "../assets/todo.png";
@@ -6,6 +7,7 @@ import notification from "../assets/notificatio.png";
 import tradelane from "../assets/tradelane.png";
 import essentialgroup from "../assets/essentialgroup.png";
 import kanban from "../assets/kanban.png";
+import kanbanMern from "../assets/kanban-mern.png";
 import { useGlobalContext } from "../Context";
 
 const Portfolio = () => {
@@ -18,70 +20,210 @@ const Portfolio = () => {
       <h2>My Projects</h2>
       <h3 className="h3">A couple projects I have worked on</h3>
       <div className="portfolio-grid">
-        <a
-          href="https://kanban-onos.netlify.app/"
-          className="portfolio-grid-el full-width"
-          target="_blank"
-        >
+        <div className="portfolio-grid-el">
+          <img src={kanbanMern} alt="Kanban MERN version" />
+          <div className="container">
+            <p>Kanban MERN version</p>
+            <div className="btn-container">
+              <button type="button">
+                <a href="https://kanban-app-yagz.onrender.com/" target="_blank">
+                  <FaSearch />
+                </a>
+              </button>
+              <button type="button">
+                <a
+                  href="https://github.com/onoseremejohn/kanban-MERN-version.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={kanban} alt="Kanban Task Manager" />
-          <p>Kanban Task Manager</p>
-        </a>
-        <a
-          href="https://multi-form-wizard.netlify.app/"
-          className="portfolio-grid-el"
-          target="_blank"
-        >
+          <div className="container">
+            <p>Kanban Task Manager</p>
+            <div className="btn-container">
+              <button>
+                <a href="https://kanban-onos.netlify.app/" target="_blank">
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Kanban-Task-Manager.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={form} alt="MULTI-STEP-FORM" />
-          <p>Form Wizard</p>
-        </a>
-        <a
-          href="https://tradelane.netlify.app"
-          className="portfolio-grid-el "
-          target="_blank"
-        >
+          <div className="container">
+            <p>Form Wizard</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://multi-form-wizard.netlify.app/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/multi-step-form.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={tradelane} alt="TRADELANE" />
-          <p>TradeLane</p>
-        </a>
-        <a
-          href="https://essentialgroup.netlify.app"
-          className="portfolio-grid-el full-width"
-          target="_blank"
-        >
+          <div className="container">
+            <p>TradeLane</p>
+            <div className="btn-container">
+              <button>
+                <a href="https://tradelane.netlify.app/" target="_blank">
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Tradelane-Footware-Store.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el full-width">
           <img src={essentialgroup} alt="ESSENTIAL GROUP" />
-          <p>EssentialGroup</p>
-        </a>
-        <a
-          href="https://my-country-explorer.netlify.app/"
-          className="portfolio-grid-el "
-          target="_blank"
-        >
+          <div className="container">
+            <p>EssentialGroup</p>
+            <div className="btn-container">
+              <button>
+                <a href="https://essentialgroup.netlify.app" target="_blank">
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Essential-Group-Landing-Page.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={countries} alt="COUNTRY EXPLORER" />
-          <p>Country Explorer</p>
-        </a>
-        <a
-          href="https://onoseremejohn.github.io/todo-app/"
-          className="portfolio-grid-el "
-          target="_blank"
-        >
+          <div className="container">
+            <p>Country Explorer</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://my-country-explorer.netlify.app/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Country-Explorer.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={todo} alt="TODO-APP" />
-          <p>Todo-App</p>
-        </a>
-        <a
-          href="https://onoseremejohn.github.io/Ecommerce-Product-Page/"
-          target="_blank"
-          className="portfolio-grid-el "
-        >
+          <div className="container">
+            <p>Todo-App</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://onoseremejohn.github.io/todo-app/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/todo-app.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={ecommerce} alt="ECOMMERCE PRODUCT LANDING PAGE" />
-          <p>ECommerce Product Page</p>
-        </a>
-        <a
-          href="https://onoseremejohn.github.io/notifications-page/"
-          target="_blank"
-          className="portfolio-grid-el"
-        >
+          <div className="container">
+            <p>ECommerce Product Page</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://onoseremejohn.github.io/Ecommerce-Product-Page/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Ecommerce-Product-Page.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el">
           <img src={notification} alt="NOTIFICATIONS" />
-          <p>Notifications Page</p>
-        </a>
+          <div className="container">
+            <p>Notifications Page</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://onoseremejohn.github.io/notifications-page/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/notifications-page.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

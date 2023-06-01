@@ -234,7 +234,7 @@ button {
 }
 
 .profile-typewriter {
-  padding: 2em 0;
+  padding: 3em 0 1em 0;
   font-weight: var(--fw-reg);
 }
 .profile-typewriter div {
@@ -245,8 +245,8 @@ button {
 }
 
 .profile-writeup {
-  letter-spacing: 2px;
-  line-height: 1.8;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
 }
 ul.experiences li {
   margin-bottom: 1.2em;
@@ -254,6 +254,7 @@ ul.experiences li {
 }
 ul.experiences li h3 {
   position: relative;
+  margin-bottom: 0.4em;
 }
 ul.experiences li h3::before {
   content: "";
@@ -382,7 +383,7 @@ ul.experiences li h3::before {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, minmax(80px, auto));
+  grid-template-rows: repeat(auto-fill, minmax(80px, auto));
   gap: 1em;
 }
 .portfolio-grid-el {
@@ -403,7 +404,7 @@ ul.experiences li h3::before {
   width: 70%;
 } */
 
-.portfolio-grid-el p {
+.portfolio-grid-el .container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -413,13 +414,27 @@ ul.experiences li h3::before {
   transition: var(--mainTransition);
   text-align: center;
 }
-
+.portfolio-grid-el .container > p {
+  margin-bottom: 0.5em;
+}
 .portfolio-grid-el:hover img {
   opacity: 0.2;
   scale: 1.1;
 }
+.portfolio-grid-el .container .btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
 
-.portfolio-grid-el:hover p {
+.portfolio-grid-el .btn-container button {
+  font-size: var(--fs-h3);
+  background: none;
+  border: none;
+  color: var(--clr-seconddark);
+}
+
+.portfolio-grid-el:hover .container {
   transform: translate(-50%, -50%) scale(1);
 }
 
