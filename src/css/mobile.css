@@ -357,7 +357,7 @@ ul.experiences > li > h3 {
   );
   height: 180%;
   animation: rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
+  /* transition: var(--mainTransition); */
 }
 
 @keyframes rotBGimg {
@@ -372,9 +372,13 @@ ul.experiences > li > h3 {
 .interest-grid-el:first-child::after {
   content: "";
   position: absolute;
-  background: rgb(162, 93, 93);
+  background-color: rgb(162, 93, 93);
   inset: 5px;
   border-radius: var(--mainBorderRadius);
+}
+
+.interest-grid-el:first-child:hover::after {
+  background-color: #f4ada7;
 }
 
 .interest-grid-el {
@@ -384,10 +388,10 @@ ul.experiences > li > h3 {
   text-align: center;
   place-items: center;
   border-radius: var(--mainBorderRadius);
-  transition: var(--mainTransition);
+  /* transition: var(--mainTransition); */
 }
 
-.interest-grid-el:hover:not(:first-child) {
+.interest-grid-el:hover {
   background-color: transparent;
   color: var(--clr-seconddark);
 }
