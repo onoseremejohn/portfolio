@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import onos from "../../assets/my_pic.jpg";
 import "../../css/mobile.css";
+import ImageLoader from "../../components/ImageLoader";
 const HomeMobile = () => {
   const { Type } = useGlobalContext();
   return (
@@ -14,7 +15,7 @@ const HomeMobile = () => {
           </h3>
         </div>
         <div className="clippath">
-          <img src={onos} alt="ONOSEREME" />
+          <ImageLoader src={onos} alt="Onosereme" />
         </div>
         <div className="name">
           <h2>Onosereme Emuemhonjie</h2>

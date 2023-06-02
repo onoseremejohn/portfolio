@@ -115,7 +115,7 @@ body {
 }
 
 .nav div button {
-  font-size: var(--fs-h3);
+  font-size: 1.5rem;
   background: transparent;
   border: none;
   color: var(--clr-seconddark);
@@ -280,5 +280,27 @@ body {
   }
   100% {
     height: 0;
+  }
+}
+
+.img-loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-left-color: transparent;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  animation: spin89345 1s linear infinite;
+  left: 50%;
+  top: 50%;
+}
+
+@keyframes spin89345 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }

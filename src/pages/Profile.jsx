@@ -174,16 +174,24 @@ const Profile = () => {
         <h2>Interests</h2>
         <h3 className="h3">Hey, I also have a life outside of code</h3>
         <div className="interest-grid">
-          <p className="interest-grid-el interest-grid-el-one">Books</p>
-          <p className="interest-grid-el interest-grid-el-five">Music</p>
-          <p className="interest-grid-el interest-grid-el-three">Design</p>
-          <p className="interest-grid-el interest-grid-el-four">
-            Non-FPS Games
-          </p>
-          <p className="interest-grid-el interest-grid-el-two">
-            Internet of Things
-          </p>
-          <p className="interest-grid-el interest-grid-el-six">Documentary</p>
+          <div className="interest-grid-el interest-grid-el-one">
+            <p>Books</p>
+          </div>
+          <div className="interest-grid-el interest-grid-el-five">
+            <p>Music</p>
+          </div>
+          <div className="interest-grid-el interest-grid-el-three">
+            <p>Design</p>
+          </div>
+          <div className="interest-grid-el interest-grid-el-four">
+            <p>Non-FPS Games</p>
+          </div>
+          <div className="interest-grid-el interest-grid-el-two">
+            <p>Internet of Things</p>
+          </div>
+          <div className="interest-grid-el interest-grid-el-six">
+            <p>Documentary</p>
+          </div>
         </div>
       </article>
     </section>

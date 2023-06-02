@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 import Loader from "./components/Loader";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Error from "./pages/Error";
 const AppLayout = () => {
   const {
     windowDimensions: { width },
@@ -15,10 +17,12 @@ const AppLayout = () => {
       {width <= 767 && (
         <>
           <Header />
-          <main className='main'>
-            <Suspense fallback={<Loader />}>
-              <Outlet />
-            </Suspense>
+          <main className="main">
+            <ErrorBoundary fallback={<Error networkError={true} />}>
+              <Suspense fallback={<Loader />}>
+                <Outlet />
+              </Suspense>
+            </ErrorBoundary>
           </main>
           <Sidebar />
         </>
@@ -26,10 +30,12 @@ const AppLayout = () => {
       {width > 767 && (
         <>
           <LeftSide />
-          <main className='main-largescreen'>
-            <Suspense fallback={<Loader />}>
-              <Outlet />
-            </Suspense>
+          <main className="main-largescreen">
+            <ErrorBoundary fallback={<Error networkError={true} />}>
+              <Suspense fallback={<Loader />}>
+                <Outlet />
+              </Suspense>
+            </ErrorBoundary>
           </main>
           <RightSide />
           <Sidebar />
