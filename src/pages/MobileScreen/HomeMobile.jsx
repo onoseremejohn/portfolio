@@ -6,35 +6,37 @@ import "../../css/mobile.css";
 const HomeMobile = () => {
   const { Type } = useGlobalContext();
   return (
-    <section className='home'>
+    <section className="home">
       <div>
-        <h3 className='typewriter'>
-          <Type />
-        </h3>
-        <div className='clippath'>
-          <img src={onos} alt='ONOSEREME' />
+        <div style={{ padding: "3em 0", height: "2em", position: "relative" }}>
+          <h3 className="typewriter">
+            <Type />
+          </h3>
         </div>
-        <div className='name'>
+        <div className="clippath">
+          <img src={onos} alt="ONOSEREME" />
+        </div>
+        <div className="name">
           <h2>Onosereme Emuemhonjie</h2>
           <p>Software Developer</p>
-          <Link to='profile'>
-            <button className='home-btn'>view my profile</button>
+          <Link to="profile">
+            <button className="home-btn">view my profile</button>
           </Link>
           <div>
             <a
-              href='https://www.linkedin.com/in/onosereme-emuemhonjie-5a5454161/'
-              target='_blank'
+              href="https://www.linkedin.com/in/onosereme-emuemhonjie-5a5454161/"
+              target="_blank"
             >
               <button>
                 <FaLinkedin />
               </button>
             </a>
-            <a href='https://twitter.com/onoseremejohn' target='_blank'>
+            <a href="https://twitter.com/onoseremejohn" target="_blank">
               <button>
                 <FaTwitter />
               </button>
             </a>
-            <a href='https://github.com/onoseremejohn' target='_blank'>
+            <a href="https://github.com/onoseremejohn" target="_blank">
               <button>
                 <FaGithub />
               </button>

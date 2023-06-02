@@ -8,6 +8,7 @@ import tradelane from "../assets/tradelane.png";
 import essentialgroup from "../assets/essentialgroup.png";
 import kanban from "../assets/kanban.png";
 import kanbanMern from "../assets/kanban-mern.png";
+import jobsApi from "../assets/jobs-api.png";
 import { useGlobalContext } from "../Context";
 
 const Portfolio = () => {
@@ -62,6 +63,27 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        <div className="portfolio-grid-el full-width">
+          <img src={tradelane} alt="TRADELANE" />
+          <div className="container">
+            <p>TradeLane</p>
+            <div className="btn-container">
+              <button>
+                <a href="https://tradelane.netlify.app/" target="_blank">
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Tradelane-Footware-Store.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="portfolio-grid-el">
           <img src={form} alt="MULTI-STEP-FORM" />
           <div className="container">
@@ -87,27 +109,6 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="portfolio-grid-el">
-          <img src={tradelane} alt="TRADELANE" />
-          <div className="container">
-            <p>TradeLane</p>
-            <div className="btn-container">
-              <button>
-                <a href="https://tradelane.netlify.app/" target="_blank">
-                  <FaSearch />
-                </a>
-              </button>
-              <button>
-                <a
-                  href="https://github.com/onoseremejohn/Tradelane-Footware-Store.git"
-                  target="_blank"
-                >
-                  <FaGithub />
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="portfolio-grid-el full-width">
           <img src={essentialgroup} alt="ESSENTIAL GROUP" />
           <div className="container">
             <p>EssentialGroup</p>
@@ -120,6 +121,30 @@ const Portfolio = () => {
               <button>
                 <a
                   href="https://github.com/onoseremejohn/Essential-Group-Landing-Page.git"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-grid-el full-width">
+          <img src={jobsApi} alt="JOBS-API" />
+          <div className="container">
+            <p>Jobs API</p>
+            <div className="btn-container">
+              <button>
+                <a
+                  href="https://jobs-api-mv3a.onrender.com/api-docs/"
+                  target="_blank"
+                >
+                  <FaSearch />
+                </a>
+              </button>
+              <button>
+                <a
+                  href="https://github.com/onoseremejohn/Jobs-Api.git"
                   target="_blank"
                 >
                   <FaGithub />

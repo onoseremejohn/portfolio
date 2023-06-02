@@ -10,18 +10,17 @@ const Profile = () => {
         </h3>
         <h2>About Me</h2>
         <p className="profile-writeup">
-          Hello, I'm Onosereme, a passionate and dedicated learner with a strong
-          affinity for coding. Building things and constantly expanding my
-          knowledge are my true passions, and software development is the most
-          rewarding avenue for achieving these goals. <br />
+          Hello, I'm Onosereme, a passionate and dedicated learner with love for
+          coding. Building things and constantly expanding my knowledge are my
+          true passions, and software development is the most rewarding avenue
+          for achieving these goals. <br />
           <br />
-          Currently pursuing a bachelor's degree in computer engineering, I have
-          developed a deep passion for software development. I'm a full-stack
-          developer leveraging the power of MongoDB, Express.js, React, and
-          Node.js. However, my thirst for knowledge doesn't end there. I am
-          currently honing my skills in Node.js and Express.js, and I have plans
-          to delve into the realm of AWS Cloud services in the near future.{" "}
-          <br />
+          Currently pursuing a bachelor's degree in computer engineering, I'm a
+          full-stack developer leveraging the power of MongoDB, Express.js,
+          React, and Node.js. However, my thirst for knowledge doesn't end
+          there. I am currently honing my skills in Node.js and Express.js, and
+          I have plans to delve into the realm of AWS Cloud services in the near
+          future. <br />
           <br />
           Driven by a desire to learn, I am constantly seeking new opportunities
           to collaborate and grow. Whether it's working on exciting projects or
@@ -38,7 +37,7 @@ const Profile = () => {
       </article>
       <article>
         <h2>Experience</h2>
-        <h3 style={{ marginBottom: "1em", fontSize: "unset" }}>
+        <h3 style={{ marginBottom: "0.5em", fontSize: "unset" }}>
           My dev journey. Condensed
         </h3>
         <ul className="experiences">
@@ -70,10 +69,13 @@ const Profile = () => {
               Technologies (Seconded to OANDO PLC)
             </h3>
             <div className="profile-writeup">
-              <ul>
+              <ul className="styled-list">
                 <li>
-                  Developed numerous APIs, gaining hands-on experience in
-                  building robust and efficient server-side endpoints.
+                  Developed numerous APIs and provided comprehensive
+                  documentation, gaining hands-on experience in building robust
+                  and efficient server-side endpoints, ensuring clear and
+                  accessible communication for seamless integration and
+                  developer support.
                 </li>
                 <li>
                   Explored and utilized MongoDB in web applications, becoming
@@ -85,9 +87,25 @@ const Profile = () => {
                   backends for web applications.
                 </li>
                 <li>
-                  Implemented JWT (JSON Web Tokens) in my projects, gaining a
-                  solid understanding of authentication and security mechanisms
-                  in web applications.
+                  Developed a comprehensive understanding of the Software
+                  Development Life Cycle, encompassing requirement analysis,
+                  development, testing, deployment, and maintenance stages.
+                </li>
+                <li>
+                  Demonstrated strong project management skills, overseeing and
+                  coordinating various aspects of software development projects,
+                  including scope definition, task allocation, timeline
+                  management, and resource coordination.
+                </li>
+                <li>
+                  Acquainted with cloud services, including both on-premises and
+                  cloud environments, and gained knowledge of deploying and
+                  managing applications in these environments.
+                </li>
+                <li>
+                  Implemented JWT (JSON Web Tokens) in projects, gaining a solid
+                  understanding of authentication and security mechanisms in web
+                  applications.
                 </li>
                 <li>
                   Developed and deployed a responsive full-stack web application
@@ -99,12 +117,7 @@ const Profile = () => {
                   knowledge of dynamic content generation and rendering.
                 </li>
                 <li>
-                  Acquainted with cloud services, including both on-premises and
-                  cloud environments, and gained knowledge of deploying and
-                  managing applications in these environments.
-                </li>
-                <li>
-                  Learned about data privacy practices and considerations,
+                  Familiarized with data privacy practices and considerations,
                   ensuring compliance with data protection regulations and
                   implementing appropriate security measures.
                 </li>
@@ -117,7 +130,7 @@ const Profile = () => {
       <article>
         <h2>Core Skills</h2>
         <h3 className="h3">Languages and Tech I work with</h3>
-        <div>
+        <div style={{ marginBottom: "1em" }}>
           <span>NODE JS</span>
           <span>REACT</span>
           <span>JAVASCRIPT</span>
@@ -132,6 +145,29 @@ const Profile = () => {
           <span>HTML5</span>
           <span>BOOTSTRAP</span>
         </div>
+        <h2>Personal Attributes</h2>
+        <ul className="profile-writeup personal-attributes styled-list">
+          <li>
+            Embrace a culture of empathy, teamwork, and passion in all
+            collaborative endeavors.
+          </li>
+          <li>
+            Possess a strong intrinsic motivation for continuous learning and
+            personal growth.
+          </li>
+          <li>
+            Demonstrate a genuine passion for enhancing developer productivity
+            through innovative solutions.
+          </li>
+          <li>
+            Strive for excellence by maintaining a balance between speed and
+            quality in all projects.
+          </li>
+          <li>
+            Possess a natural inclination towards automation, seeking
+            opportunities to streamline processes and increase efficiency.
+          </li>
+        </ul>
       </article>
 
       <article>
