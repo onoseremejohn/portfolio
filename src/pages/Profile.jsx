@@ -10,22 +10,26 @@ const Profile = () => {
         </h3>
         <h2>About Me</h2>
         <p className="profile-writeup">
-          Hello, I'm Onosereme, a passionate and dedicated learner with love for
-          coding. Building things and constantly expanding my knowledge are my
-          true passions, and software development is the most rewarding avenue
-          for achieving these goals. <br />
+          I'm Onosereme, a front-end developer with a Bachelor's degree in
+          Computer Engineering. I specialize in crafting engaging user
+          experiences using modern web technologies.
           <br />
-          Currently pursuing a bachelor's degree in computer engineering, I'm a
-          full-stack developer leveraging the power of MongoDB, Express.js,
-          React, and Node.js. However, my thirst for knowledge doesn't end
-          there. I am currently honing my skills in Node.js and Express.js, and
-          I have plans to delve into the realm of AWS Cloud services in the near
-          future. <br />
+          <br />
+          At the heart of my toolkit are React and NextJS, augmented with
+          TypeScript and Tailwind CSS for rapid UI development. While I
+          specialize in front-end development, I'm also proficient in backend
+          tools such as Node.js and Express, along with databases like MongoDB
+          and MySQL.
+          <br />
+          <br />
+          By the way, I have plans to delve into the realm of AWS Cloud services
+          and Blockchain in the near future.
+          <br />
           <br />
           Driven by a desire to learn, I am constantly seeking new opportunities
           to collaborate and grow. Whether it's working on exciting projects or
           joining a dynamic team. If you're in need of a versatile and skilled
-          developer for your team, look no further. I am the guy you need on
+          developer for your team, look no further. I am the boy you need on
           your team.{" "}
           <Link
             to="/contact"
@@ -42,11 +46,12 @@ const Profile = () => {
         </h3>
         <ul className="experiences">
           <li>
-            <h3>(May ‘22 - Present): Self-Learning</h3>
+            <h3>Self-Learning (May ‘22 - Present)</h3>
             <div className="profile-writeup">
-              Currently investing heavily in online resources such as Udemy.
-              Completed quite a number of advanced development courses and built
-              amazing projects with my knowledge. Check out my portfolio{" "}
+              Currently investing heavily in online resources on Udemy and
+              Youtube. Completed quite a number of advanced development courses
+              and built amazing projects with my knowledge. Check out my
+              portfolio{" "}
               <Link
                 to="/portfolio"
                 style={{ fontWeight: "bold", textTransform: "uppercase" }}
@@ -56,7 +61,7 @@ const Profile = () => {
               <br />
               <a
                 style={{ fontWeight: "bold", cursor: "pointer" }}
-                href="./Onosereme's_Resume.pdf"
+                href="./OnoseremeEmuemhonjieResume.pdf"
                 download
               >
                 GET MY RESUME
@@ -65,61 +70,106 @@ const Profile = () => {
           </li>
           <li>
             <h3>
-              (March ‘23 - May ‘23): Software Developer Intern @ SiNet
-              Technologies (Seconded to OANDO PLC)
+              Front End Developer @ 233Developers Inc (June ‘23 - Present)
             </h3>
             <div className="profile-writeup">
               <ul className="styled-list">
                 <li>
-                  Developed numerous APIs and provided comprehensive
-                  documentation, gaining hands-on experience in building robust
-                  and efficient server-side endpoints, ensuring clear and
-                  accessible communication for seamless integration and
-                  developer support.
+                  Crafted a React web app to facilitate user management and
+                  administrative operations for a dating mobile app with over
+                  6000 users, boosting engagement metrics by 40% within the
+                  first quarter.
                 </li>
                 <li>
-                  Explored and utilized MongoDB in web applications, becoming
-                  proficient in leveraging its powerful features and utilizing
-                  handy MongoDB methods.
+                  Integrated a Customer Support feature within the
+                  aforementioned web app incorporating real-time messaging
+                  capabilities; reduced average users' issue resolution time by
+                  a notable 30%.
                 </li>
                 <li>
-                  Mastered Node.js and Express.js, developing secure and robust
-                  backends for web applications.
+                  Spearheaded the deployment of error handling mechanisms for
+                  message transmissions, delivering 99.9% error-free
+                  communications by providing immediate visual feedback for any
+                  failures.
                 </li>
                 <li>
-                  Developed a comprehensive understanding of the Software
-                  Development Life Cycle, encompassing requirement analysis,
-                  development, testing, deployment, and maintenance stages.
+                  Enhanced admin experience by integrating Material UI
+                  components to deliver timely notifications for admin actions
+                  and API feedback, leading to a remarkable decrease in admin
+                  errors and a 10% boost in productivity.
                 </li>
                 <li>
-                  Demonstrated strong project management skills, overseeing and
-                  coordinating various aspects of software development projects,
-                  including scope definition, task allocation, timeline
-                  management, and resource coordination.
+                  Engineered an activity timeline feature to track admin
+                  actions, encompassing login events, user bans, password
+                  changes, and support ticket management activities; facilitated
+                  in-depth audit trails for admin operations.
                 </li>
                 <li>
-                  Acquainted with cloud services, including both on-premises and
-                  cloud environments, and gained knowledge of deploying and
-                  managing applications in these environments.
+                  Implemented React custom hooks to optimize fetch requests
+                  within components, resulting in significant reduction of code
+                  redundancy, improved maintainability, scalability, and overall
+                  code quality.
                 </li>
                 <li>
-                  Implemented JWT (JSON Web Tokens) in projects, gaining a solid
-                  understanding of authentication and security mechanisms in web
-                  applications.
+                  Scaled up the application's performance and rendering
+                  efficiency by managing global states with React Context API
+                  and state management techniques driving a 50% decrease in bug
+                  reports and rise in satisfaction ratings.
                 </li>
                 <li>
-                  Developed and deployed a responsive full-stack web application
-                  using React with TypeScript for the frontend and Node.js,
-                  Express.js, and MongoDB for the backend.
+                  Transformed 50+ PSD designs and Figma prototypes into
+                  interactive HTML pages, ensuring pixel-perfect accuracy,
+                  cross-browser compatibility, and ADA (Americans with
+                  Disabilities Act) compliance.
                 </li>
                 <li>
-                  Worked extensively with templating using EJS, enhancing my
-                  knowledge of dynamic content generation and rendering.
+                  Led a brainstorming session to kickstart the development of a
+                  laundry management system app; crafted an App Concept Proposal
+                  document outlining user personas, wireframes, and
+                  functionality requirements
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h3>
+              Software Developer Intern @ SiNet Technologies (Seconded to OANDO
+              PLC) (March ‘23 - May ‘23)
+            </h3>
+            <div className="profile-writeup">
+              <ul className="styled-list">
+                <li>
+                  Revamped content generation and rendering in a web app with
+                  EJS templates, increasing developer productivity by 100% and
+                  streamlining client-side data processing.
                 </li>
                 <li>
-                  Familiarized with data privacy practices and considerations,
-                  ensuring compliance with data protection regulations and
-                  implementing appropriate security measures.
+                  Deployed and maintained web servers using Node.js and Express,
+                  handling 100 concurrent users with 0% downtime in high-traffic
+                  e-commerce environment.
+                </li>
+                <li>
+                  Designed a JWT authentication mechanism for applications;
+                  reduced unauthorized access attempts by 25% within the 1 month
+                  of deployment.
+                </li>
+                <li>
+                  Simplified database schema for a SaaS platform utilizing
+                  MongoDB Aggregation Pipelines, slashing query response time by
+                  50% and upgrading system scalability.
+                </li>
+                <li>
+                  Created REST-APIs with detailed documentation using Postman
+                  and Swagger UI, including role-based access controls and
+                  reducing endpoint access errors by 30%.
+                </li>
+                <li>
+                  Learned to develop Progressive Web Applications (PWAs) within
+                  1 month, demonstrating rapid skill acquisition.
+                </li>
+                <li>
+                  Collaborated with senior developers and project managers to
+                  identify and resolve technical issues within applications.
                 </li>
               </ul>
             </div>
@@ -131,33 +181,36 @@ const Profile = () => {
         <h2>Core Skills</h2>
         <h3 className="h3">Languages and Tech I work with</h3>
         <div style={{ marginBottom: "1em" }}>
-          <span>NODE JS</span>
           <span>REACT</span>
-          <span>JAVASCRIPT</span>
-          <span>MONGODB</span>
+          <span>NEXT JS</span>
           <span>TYPESCRIPT</span>
+          <span>JAVASCRIPT (ES6)</span>
+          <span>NODE JS</span>
+          <span>MYSQL</span>
+          <span>MONGODB</span>
           <span>EXPRESS</span>
-          <span>CSS</span>
           <span>TAILWIND</span>
+          <span>CSS3</span>
           <span>STYLED-COMPONENTS</span>
           <span>GIT</span>
           <span>GITHUB</span>
+          <span>GULP</span>
           <span>HTML5</span>
           <span>BOOTSTRAP</span>
         </div>
         <h2>Personal Attributes</h2>
         <ul className="profile-writeup personal-attributes styled-list">
           <li>
-            Embrace a culture of empathy, teamwork, and passion in all
-            collaborative endeavors.
+            Embrace a culture of teamwork and passion in all collaborative
+            endeavors.
           </li>
           <li>
-            Possess a strong intrinsic motivation for continuous learning and
-            personal growth.
+            Possess a strong motivation for continuous learning and personal
+            growth.
           </li>
           <li>
-            Demonstrate a genuine passion for enhancing developer productivity
-            through innovative solutions.
+            Demonstrate passion for enhancing developer productivity through
+            innovative solutions.
           </li>
           <li>
             Strive for excellence by maintaining a balance between speed and
@@ -181,16 +234,16 @@ const Profile = () => {
             <p>Music</p>
           </div>
           <div className="interest-grid-el interest-grid-el-three">
-            <p>Design</p>
+            <p>Movies</p>
           </div>
           <div className="interest-grid-el interest-grid-el-four">
-            <p>Non-FPS Games</p>
+            <p>Video Games</p>
           </div>
           <div className="interest-grid-el interest-grid-el-two">
             <p>Internet of Things</p>
           </div>
           <div className="interest-grid-el interest-grid-el-six">
-            <p>Documentary</p>
+            <p>Documentary / Research</p>
           </div>
         </div>
       </article>

@@ -319,9 +319,15 @@ ul.experiences > li > h3 {
   padding: 0.5em 0.5em;
   color: white;
   border-radius: var(--mainBorderRadius);
-  background: red;
+  background: #671111;
   font-weight: bold;
   box-shadow: var(--lightShadow);
+  cursor: default;
+  transition: var(--mainTransition);
+}
+
+.profile article > div span:hover{
+  box-shadow: none;
 }
 
 .h3 {
@@ -339,6 +345,7 @@ ul.experiences > li > h3 {
   grid-template-rows: repeat(9, 50px);
   transition: var(--mainTransition);
   font-size: var(--fs-h3);
+  cursor: default;
 }
 
 .interest-grid-el:first-child {

@@ -13,7 +13,7 @@ const RightSide = () => {
       </button>
       <div>
         <a
-          href='https://www.linkedin.com/in/onosereme-emuemhonjie-5a5454161/'
+          href='https://www.linkedin.com/in/onoseremejohn/'
           target='_blank'
         >
           <button>

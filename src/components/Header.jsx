@@ -7,16 +7,16 @@ const Header = () => {
 
   return (
     <header>
-      <Link to='/' onClick={closeNav}>
-        <img id='logo' src={logo} alt='logo' />
+      <Link to="/" onClick={closeNav}>
+        <img id="logo" src={logo} alt="logo" />
       </Link>
 
       <button
         className={`nav-toggle ${isNavOpen ? "open" : ""}`}
-        aria-label='toggle navigation'
+        aria-label="toggle navigation"
         onClick={toggleNav}
       >
-        <span className='hamburger'></span>
+        <span className="hamburger"></span>
       </button>
     </header>
   );
