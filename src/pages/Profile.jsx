@@ -46,7 +46,7 @@ const Profile = () => {
         </h3>
         <ul className="experiences">
           <li>
-            <h3>Self-Learning (May ‘22 - Present)</h3>
+            <h3>Self-Learning (May &apos;22 - Present)</h3>
             <div className="profile-writeup">
               Currently investing heavily in online resources on Udemy and
               Youtube. Completed quite a number of advanced development courses
@@ -70,33 +70,66 @@ const Profile = () => {
           </li>
           <li>
             <h3>
-              Front End Developer @ 233Developers Inc (June ‘23 - Present)
+              Front End Developer @ OurProperty NG (August &apos;24 - January
+              &apos;25)
             </h3>
             <div className="profile-writeup">
               <ul className="styled-list">
                 <li>
-                  Crafted a React web app to facilitate user management and
-                  administrative operations for a dating mobile app with over
-                  6000 users, boosting engagement metrics by 40% within the
-                  first quarter.
+                  Played a pivotal role in developing property management
+                  software for real estate companies, streamlining the
+                  management of landlords, tenants, staff, properties, and
+                  financial transactions.
                 </li>
                 <li>
-                  Integrated a Customer Support feature within the
+                  Collaborated with the backend team to integrate a secure
+                  wallet system, facilitating transactions between users,
+                  company wallets, and landlords.
+                </li>
+                <li>
+                  Successfully integrated complex APIs with multiple filters,
+                  search, and sort functionalities, ensuring robust error
+                  handling and user notifications for both successful and failed
+                  actions.
+                </li>
+                <li>
+                  Converted 30+ Figma design pages into responsive and
+                  functional code with NextJS
+                </li>
+                <li>
+                  Managed the integration of company onboarding and setup
+                  processes, streamlining the initial configuration for new
+                  companies and ensuring a smooth transition to the app.
+                </li>
+                <li>
+                  Enhanced the customization features of the web app, enabling
+                  companies to personalize brand colors, navigation bar
+                  placement, and theme settings for a tailored user experience.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h3>
+              Front End Developer @ 233Developers Inc (June &apos;23 - March
+              &apos;24)
+            </h3>
+            <div className="profile-writeup">
+              <ul className="styled-list">
+                <li>
+                  Completed the development of a React web app to facilitate
+                  user management and administrative operations for a dating
+                  mobile app with over 6000 users.
+                </li>
+                <li>
+                  Integrated a customer support feature within the
                   aforementioned web app incorporating real-time messaging
-                  capabilities; reduced average users' issue resolution time by
-                  a notable 30%.
+                  capabilities.
                 </li>
                 <li>
-                  Spearheaded the deployment of error handling mechanisms for
-                  message transmissions, delivering 99.9% error-free
-                  communications by providing immediate visual feedback for any
+                  Implemented error handling mechanisms during API
+                  communication, providing immediate visual feedback for any
                   failures.
-                </li>
-                <li>
-                  Enhanced admin experience by integrating Material UI
-                  components to deliver timely notifications for admin actions
-                  and API feedback, leading to a remarkable decrease in admin
-                  errors and a 10% boost in productivity.
                 </li>
                 <li>
                   Engineered an activity timeline feature to track admin
@@ -105,28 +138,11 @@ const Profile = () => {
                   in-depth audit trails for admin operations.
                 </li>
                 <li>
-                  Implemented React custom hooks to optimize fetch requests
-                  within components, resulting in significant reduction of code
-                  redundancy, improved maintainability, scalability, and overall
-                  code quality.
-                </li>
-                <li>
-                  Scaled up the application's performance and rendering
-                  efficiency by managing global states with React Context API
-                  and state management techniques driving a 50% decrease in bug
-                  reports and rise in satisfaction ratings.
-                </li>
-                <li>
-                  Transformed 50+ PSD designs and Figma prototypes into
-                  interactive HTML pages, ensuring pixel-perfect accuracy,
-                  cross-browser compatibility, and ADA (Americans with
-                  Disabilities Act) compliance.
-                </li>
-                <li>
-                  Led a brainstorming session to kickstart the development of a
-                  laundry management system app; crafted an App Concept Proposal
-                  document outlining user personas, wireframes, and
-                  functionality requirements
+                  Ensured screen reader compliance, cross-browser functionality,
+                  and accessibility for users with disabilities by utilizing
+                  proper HTML semantics, managing tab indexes precisely, and
+                  implementing ARIA roles and properties; enhanced user
+                  experience and inclusivity for all users.
                 </li>
               </ul>
             </div>
@@ -134,42 +150,30 @@ const Profile = () => {
           <li>
             <h3>
               Software Developer Intern @ SiNet Technologies (Seconded to OANDO
-              PLC) (March ‘23 - May ‘23)
+              PLC) (March &apos;23 - May &apos;23)
             </h3>
             <div className="profile-writeup">
               <ul className="styled-list">
                 <li>
-                  Revamped content generation and rendering in a web app with
-                  EJS templates, increasing developer productivity by 100% and
-                  streamlining client-side data processing.
+                  Created REST APIs with detailed documentation using Postman
+                  and Swagger UI, incorporating role-based access controls.
+                </li>
+                <li>
+                  Crafted database schema for a SaaS platform using MongoDB
+                  Aggregation Pipelines, enhancing system scalability.
+                </li>
+                <li>
+                  Revamped content generation and rendering using EJS templates,
+                  streamlining client-side data processing in a task manager
+                  app.
                 </li>
                 <li>
                   Deployed and maintained web servers using Node.js and Express,
-                  handling 100 concurrent users with 0% downtime in high-traffic
-                  e-commerce environment.
-                </li>
-                <li>
-                  Designed a JWT authentication mechanism for applications;
-                  reduced unauthorized access attempts by 25% within the 1 month
-                  of deployment.
-                </li>
-                <li>
-                  Simplified database schema for a SaaS platform utilizing
-                  MongoDB Aggregation Pipelines, slashing query response time by
-                  50% and upgrading system scalability.
-                </li>
-                <li>
-                  Created REST-APIs with detailed documentation using Postman
-                  and Swagger UI, including role-based access controls and
-                  reducing endpoint access errors by 30%.
+                  handling multiple concurrent users.
                 </li>
                 <li>
                   Learned to develop Progressive Web Applications (PWAs) within
                   1 month, demonstrating rapid skill acquisition.
-                </li>
-                <li>
-                  Collaborated with senior developers and project managers to
-                  identify and resolve technical issues within applications.
                 </li>
               </ul>
             </div>
