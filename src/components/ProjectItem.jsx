@@ -6,6 +6,7 @@ const PortfolioItem = ({
   projectLink,
   githubLink,
   className,
+  additionalInfo,
 }) => {
   return (
     <div
@@ -16,17 +17,28 @@ const PortfolioItem = ({
       <ImageLoader src={imageSrc} alt={title} />
       <div className="container">
         <p>{title}</p>
-        <div className="btn-container">
-          <button>
-            <a href={projectLink} target="_blank" rel="noopener noreferrer">
-              <FaSearch />
-            </a>
-          </button>
-          <button>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+        {additionalInfo && (
+          <p dangerouslySetInnerHTML={{ __html: additionalInfo }} />
+        )}
+        <div className="links-container">
+          <a
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Project"
+          >
+            <FaSearch />
+          </a>
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View Github"
+            >
               <FaGithub />
             </a>
-          </button>
+          )}
         </div>
       </div>
     </div>

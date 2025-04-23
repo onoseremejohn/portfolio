@@ -8,18 +8,38 @@ import essentialgroup from "../assets/essentialgroup.png";
 import kanban from "../assets/kanban.png";
 import kanbanMern from "../assets/kanban-mern.png";
 import jobsApi from "../assets/jobs-api.png";
-import { useGlobalContext } from "../Context";
+import outingz from "../assets/outingz.png";
+import sasaek from "../assets/sasaek-mini.png";
+import centerOne from "../assets/center-one.png";
 import PortfolioItem from "../components/ProjectItem";
+import TypeWriter from "../components/TypeWriter";
 const Portfolio = () => {
-  const { Type } = useGlobalContext();
   return (
     <section className="portfolio">
       <h3 className="profile-typewriter">
-        Two things: <Type />
+        Two things: <TypeWriter str1="I am Onos" str2="love to code" />
       </h3>
       <h2>My Projects</h2>
       <h3 className="h3">A couple projects I have worked on</h3>
       <div className="portfolio-grid">
+        <PortfolioItem
+          imageSrc={centerOne}
+          title="Center One"
+          projectLink="https://center-one.netlify.app/"
+          githubLink="https://github.com/onoseremejohn/center-one.git"
+        />
+        <PortfolioItem
+          imageSrc={sasaek}
+          title="Sasaek-Mini"
+          projectLink="https://sasaek-mini.netlify.app/"
+          githubLink="https://github.com/onoseremejohn/sasaek-mini.git"
+        />
+        <PortfolioItem
+          imageSrc={outingz}
+          title="Outingz"
+          projectLink="https://outingz.vercel.app/"
+          additionalInfo="Click on 'Admin' in the navigation bar to login<br>Login: onos@event.com<br>Password: Secret1@"
+        />
         <PortfolioItem
           imageSrc={kanbanMern}
           title="Kanban MERN version"
@@ -33,7 +53,7 @@ const Portfolio = () => {
           githubLink="https://github.com/onoseremejohn/Kanban-Task-Manager.git"
         />
         <PortfolioItem
-          className="full-width"
+          // className="full-width"
           imageSrc={tradelane}
           title="TradeLane"
           projectLink="https://tradelane.netlify.app/"
@@ -52,7 +72,7 @@ const Portfolio = () => {
           githubLink="https://github.com/onoseremejohn/Essential-Group-Landing-Page.git"
         />
         <PortfolioItem
-          className="full-width"
+          // className="full-width"
           imageSrc={jobsApi}
           title="Jobs API"
           projectLink="https://jobs-api-mv3a.onrender.com/api-docs/"
@@ -77,6 +97,7 @@ const Portfolio = () => {
           githubLink="https://github.com/onoseremejohn/Ecommerce-Product-Page.git"
         />
         <PortfolioItem
+          className="full-width"
           imageSrc={notification}
           title="Notifications Page"
           projectLink="https://onoseremejohn.github.io/notifications-page/"

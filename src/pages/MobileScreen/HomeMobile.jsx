@@ -1,17 +1,16 @@
-import { useGlobalContext } from "../../Context";
 import { Link } from "react-router-dom";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import onos from "../../assets/my_pic.jpg";
 import "../../css/mobile.css";
 import ImageLoader from "../../components/ImageLoader";
+import TypeWriter from "../../components/TypeWriter";
 const HomeMobile = () => {
-  const { Type } = useGlobalContext();
   return (
     <section className="home">
       <div>
         <div style={{ padding: "3em 0", height: "2em", position: "relative" }}>
           <h3 className="typewriter">
-            <Type />
+            <TypeWriter str1="I am Onos" str2="love to code" />
           </h3>
         </div>
         <div className="clippath">
@@ -24,10 +23,7 @@ const HomeMobile = () => {
             <button className="home-btn">view my profile</button>
           </Link>
           <div>
-            <a
-              href="https://linkedin.com/in/onoseremejohn"
-              target="_blank"
-            >
+            <a href="https://linkedin.com/in/onoseremejohn" target="_blank">
               <button>
                 <FaLinkedin />
               </button>

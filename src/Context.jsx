@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import Typewriter from "typewriter-effect";
 
 const AppContext = createContext();
 
@@ -22,22 +21,14 @@ const AppProvider = ({ children }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const Type = () => {
-    return (
-      <Typewriter
-        options={{ loop: true }}
-        onInit={(str) =>
-          str
-            .typeString("I am Onos")
-            .pauseFor(2000)
-            .deleteChars(7)
-            .typeString("love to code")
-            .pauseFor(800)
-            .start()
-        }
-      />
-    );
-  };
+  useEffect(() => {
+    if (isNavOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [isNavOpen]);
+
   return (
     <AppContext.Provider
       value={{
@@ -45,7 +36,6 @@ const AppProvider = ({ children }) => {
         toggleNav,
         closeNav,
         windowDimensions,
-        Type,
       }}
     >
       {children}

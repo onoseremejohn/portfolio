@@ -502,13 +502,13 @@ ul.experiences > li > h3 {
   opacity: 0.2;
   scale: 1.1;
 }
-.portfolio-grid-el .container .btn-container {
+.portfolio-grid-el .container .links-container {
   display: flex;
   justify-content: center;
   gap: 1em;
 }
 
-.portfolio-grid-el .btn-container button {
+.portfolio-grid-el .links-container a {
   font-size: var(--fs-h3);
   background: none;
   border: none;

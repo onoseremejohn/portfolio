@@ -1,23 +1,11 @@
 import { BsTelephoneInbound, BsPersonCheck } from "react-icons/bs";
 import { CiLocationOn, CiMail } from "react-icons/ci";
-import Typewriter from "typewriter-effect";
+import TypeWriter from "../components/TypeWriter";
 const Contact = () => {
   return (
     <section className="contact">
       <h3 className="profile-typewriter">
-        Two things:{" "}
-        <Typewriter
-          options={{ loop: true }}
-          onInit={(str) =>
-            str
-              .typeString("I am Onos")
-              .pauseFor(2000)
-              .deleteChars(7)
-              .typeString("dont bite")
-              .pauseFor(800)
-              .start()
-          }
-        />
+        Two things: <TypeWriter str1="I am Onos" str2="dont bite" />
       </h3>
       <h2>Reach Out</h2>
       <h3 className="h3">Worth it. Trust me</h3>

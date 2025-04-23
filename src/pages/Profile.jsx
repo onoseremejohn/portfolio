@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { useGlobalContext } from "../Context";
+import TypeWriter from "../components/TypeWriter";
 const Profile = () => {
-  const { Type } = useGlobalContext();
   return (
     <section className="profile">
       <article>
         <h3 className="profile-typewriter">
-          Two things: <Type />
+          Two things: <TypeWriter str1="I am Onos" str2="love to code" />
         </h3>
         <h2>About Me</h2>
         <p className="profile-writeup">

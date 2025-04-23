@@ -12,9 +12,11 @@ const Header = () => {
       </Link>
 
       <button
+        type="button"
         className={`nav-toggle ${isNavOpen ? "open" : ""}`}
         aria-label="toggle navigation"
         onClick={toggleNav}
+        title="Toggle Navigation"
       >
         <span className="hamburger"></span>
       </button>
